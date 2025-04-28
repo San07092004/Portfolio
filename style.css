@@ -1,0 +1,85 @@
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #e433c6, #b941a1);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: transparent !important;
+  }
+  
+  
+  /* Cards */
+  .project-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  /* Popping effect for project and certificate cards */
+.project-card, .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.project-card:hover, .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+  }
+  
+  body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ccc;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 50px;
+  }
+#about img{
+  width: 100%;
+  max-width: 200px;
+  margin-left: 100px ;
+}
+footer img{
+  width: 100%;
+  max-width: 30px;
+}
